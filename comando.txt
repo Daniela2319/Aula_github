@@ -1,0 +1,148 @@
+# Aula sobre Git
+
+**Objetivo:** Introduzir os conceitos básicos do Git e demonstrar seu uso prático.
+
+## Passo 1: Configuração inicial
+
+1. **Criar um diretório para o projeto:**
+
+```bash
+mkdir projeto_git
+Esse será o diretório onde o repositório Git será inicializado.
+
+Abrir o Visual Studio Code na pasta.
+Destacar a importância de um ambiente integrado para facilitar o trabalho com Git.
+
+Abrir um terminal Git Bash no VSCode.
+Abrir um terminal diretamente no VSCode para facilitar a execução dos comandos Git.
+
+Iniciar o repositório Git:
+git init
+Esse comando cria um novo repositório local no diretório atual, iniciando o rastreamento de alterações.
+
+Configurar nome de usuário e email:
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@example.com"
+É importante configurar essas informações para os commits.
+
+Passo 2: Versionando arquivos
+Criar um arquivo inicial .txt dentro da pasta:
+echo "Conteúdo do arquivo" > aula_git.txt
+Criar um arquivo diretamente no terminal.
+
+Fazer o primeiro commit:
+git add -A
+git commit -m "Arquivo aula_git.txt criado"
+Esse commit é o primeiro registro permanente das mudanças feitas.
+
+Passo 3: Trabalhando com Branches
+Criar um segundo arquivo:
+echo "Conteúdo do arquivo" > comando.txt
+Estamos expandindo o projeto com um novo arquivo.
+
+Anotar os comandos aprendidos até o momento no arquivo comando.txt.
+Isso reforça a prática de versionamento e documentação. Os comandos usados estão na última parte desse Colab.
+
+Salvar as mudanças:
+git add .
+git commit -m "Adicionadas anotações de comandos"
+É Importante salvar as alterações nos arquivos antes de fazer os commits, para depois fazer commits frequentes e bem documentados.
+
+Passo 4: Criando uma nova Branch
+Criar uma nova branch e mudar para ela:
+git checkout -b nova-branch
+Criamos uma nova linha de desenvolvimento independente.
+
+Passo 5: Trabalhando em uma nova Branch
+Fazer alterações na nova branch:
+Alterar a frase no arquivo "aula_git.txt".
+Adicionar algumas linhas no arquivo "comando.txt".
+Salvar as mudanças:
+git add .
+git commit -m "Atualizações na nova branch"
+Passo 6: Transição entre Branches
+Verificar as branches disponíveis:
+git branch
+Listar as branches existentes.
+
+Mudar para a nova branch:
+git checkout nova-branch
+O '*' indica a branch atual.
+
+Demonstração de como transitar entre as branches e mostrar as mudanças nos arquivos:
+git checkout -b outra-nova-branch: Criar e mudar para uma nova branch ao mesmo tempo.
+git diff nome-da-nova-branch: Mostrar as diferenças nos arquivos entre as branches.
+Passo 7: Entendendo o conceito de HEAD
+Conceito de HEAD:
+
+HEAD: É um marcador especial que indica o commit atual em que estamos trabalhando.
+
+Exemplo: (HEAD -> main) indica que o HEAD está na branch main, ou seja, as alterações que fizermos serão aplicadas a essa branch.
+
+Passo 8: Demonstração de diferenças entre as Branches
+Comparar as branches:
+git diff nome-da-nova-branch
+git diff para ver as diferenças entre as branches.
+
+Passo 9: Voltar para a branch "main"
+git checkout main
+Voltar para a branch principal.
+
+Passo 10: Criando um Conflito
+Fazer alterações nos arquivos em branches diferentes para criar um conflito.
+Possibilidade de conflitos ao mesclar branches.
+
+Usar o comando merge para mesclar as branches:
+git merge nome-da-outra-branch
+O Git tentará automaticamente mesclar as alterações, mas pode ocorrer conflitos.
+
+Passo 11: Resolução de Conflitos
+Como resolver um conflito:
+git checkout nova-branch
+git merge main
+Ao mesclar duas branches, podem ocorrer conflitos. O Git sinaliza os conflitos nos arquivos.
+
+Resolver os conflitos manualmente, editando os arquivos afetados.
+Uma vez resolvido, adicionar os arquivos modificados e fazer um novo commit:
+git add .
+git commit -m "Conflito resolvido"
+FIM
+[ ]
+
+git init: Inicializa um novo repositório Git em um diretório vazio, preparando-o para rastrear alterações nos arquivos.
+
+git add: Adiciona alterações feitas nos arquivos ao índice de preparação (staging area), preparando-as para o próximo commit.
+
+git commit: Cria um novo registro de versão (commit) com as alterações preparadas na staging area, proporcionando um histórico organizado do projeto.
+
+git status: Exibe o estado atual dos arquivos no repositório, mostrando quais foram modificados, adicionados ou estão prontos para commit.
+
+git log: Apresenta o histórico de commits, exibindo informações como autor, data e mensagem do commit.
+
+git branch: Lista, cria ou deleta branches, permitindo a criação de linhas de desenvolvimento independentes.
+
+git checkout: Permite a mudança entre branches ou a restauração de arquivos, facilitando a navegação no projeto.
+
+git merge: Combina as mudanças de uma branch em outra, integrando o trabalho feito em diferentes linhas de desenvolvimento.
+
+git remote add: Adiciona um repositório remoto, possibilitando colaboração e sincronização entre diferentes locais.
+
+git push: Envia commits locais para um repositório remoto, mantendo-o atualizado.
+
+git clone: Cria uma cópia de um repositório remoto localmente, permitindo o trabalho independente.
+
+Comandos Adicionais:
+
+git config: Utilizado para configurar informações do usuário no Git, como nome e email.
+
+git rm: Remove arquivos do repositório, preparando-os para o próximo commit.
+
+git remote -v: Lista os repositórios remotos configurados, mostrando os URLs de cada um.
+
+Além disso, aqui estão os comandos mencionados para criar, mudar e mesclar branches:
+
+git branch nome-da-branch: Cria uma nova branch.
+
+git checkout nome-da-branch: Muda para a nova branch.
+
+git merge nome-da-outra-branch: Mescla as alterações de uma branch em outra.
