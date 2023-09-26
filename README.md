@@ -31,3 +31,6 @@ Esse projeto foi desenvolvindo com as seguintes tecnologias:
 # Autor 
   
   _Daniela Velter_
+  <br>
+  <br>
+  [![Linkedin](https://img.shields.io/badge/DANIELA-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniela-velter-231485f/)
