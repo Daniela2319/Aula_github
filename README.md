@@ -7,7 +7,7 @@
 <a href="#tecnologia">Tecnologia</a>&nbsp;&nbsp;&nbsp|&nbsp;&nbsp;&nbsp;
 <a href="#autor">Autor</a>.</p>
 
-# Sobre 💾
+# Sobre 
 
 Aula pratica de Git e Github 😻: 
 
@@ -17,13 +17,13 @@ Aula pratica de Git e Github 😻:
 </p>
 
 
-# Tecnologia 🖥️
+# Tecnologia 
 Esse projeto foi desenvolvindo com as seguintes tecnologias:
 
 * IDE VisualStudio Code
 * Texto
 * Git e Github
 
-# Autor 👩‍💻
+# Autor 
   
   _Daniela Velter_
