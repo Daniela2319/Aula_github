@@ -1,1 +1,2 @@
 Atualizações da nova_branch
+como resolver um conflito
