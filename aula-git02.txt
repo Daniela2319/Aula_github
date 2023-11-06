@@ -1,2 +1,3 @@
 Atualizações da nova_branch
 como resolver um conflito
+nova linha de código
