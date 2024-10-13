@@ -28,9 +28,57 @@ Esse projeto foi desenvolvindo com as seguintes tecnologias:
 * Texto
 * Git e Github
 
+
+
 # Autor 
   
   _Daniela Velter_
   <br>
   <br>
   [![Linkedin](https://img.shields.io/badge/DANIELA-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniela-velter-231485f/)
+
+```mermaid
+classDiagram
+
+class Post {
+    + int id
+    + string title
+    + string content
+    + string author
+    + datetime publish_date
+    + str __str__()
+}
+
+class Comment {
+    + int id
+    + Post post
+    + string author
+    + string content
+    + datetime publish_date
+    + str __str__()
+}
+
+class Blog {
+    + list~Post~ home()
+    + Post view_post(int post_id)
+    + list~Post~ search_posts(string keyword)
+}
+
+class Admin {
+    + bool login()
+    + void manage_posts()
+    + void manage_comments()
+}
+
+class User {
+    + bool login()
+    + void register()
+    + void comment_on_post(int post_id, string content)
+}
+
+Post "1" --> "0..*" Comment : contains
+Blog "1" --> "0..*" Post : displays
+Admin "1" --> "0..*" Post : manages
+User "1" --> "0..*" Comment : submits
+User --> Blog : interacts with
+
